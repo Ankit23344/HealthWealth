@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Self-Sync</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header Section -->
+        <header class="header">
+            <img src="C:\Users\himan\Downloads\1.png" alt="Self-Sync Logo" class="logo">
+            <h1>Self-Sync</h1>
+            <p class="tagline">Align Your Health & Goals</p>
+        </header>
+
+        <!-- Navigation Options -->
+        <nav class="navigation">
+            <ul>
+                <li><a href="#daily-reminder">Daily Reminder</a></li>
+                <li><a href="#weekly-reminder">Weekly Reminder</a></li>
+                <li><a href="#hydration-reminder">Hydration Reminder</a></li>
+                <li><a href="#ai-chatbot">AI Chatbot</a></li>
+                <li><a href="#consultancy">Consultancy</a></li>
+            </ul>
+        </nav>
+
+        <!-- Settings Icon -->
+        <div class="settings">
+            <a href="#settings">⚙️</a>
+        </div>
+
+        <!-- Content Sections -->
+        <section id="daily-reminder" class="content">
+            <h2>Daily Reminder</h2>
+            <p>Display all daily reminders here.</p>
+            <button class="add-reminder">Add Reminder</button>
+            <div class="reminder-list"></div>
+        </section>
+
+        <section id="weekly-reminder" class="content">
+            <h2>Weekly Reminder</h2>
+            <p>Display all weekly reminders here.</p>
+            <button class="add-reminder">Add Reminder</button>
+            <div class="reminder-list"></div>
+        </section>
+
+        <section id="hydration-reminder" class="content">
+            <h2>Hydration Reminder</h2>
+            <p>Display water intake and timings here.</p>
+            <button class="add-reminder">Add Reminder</button>
+            <div class="reminder-list"></div>
+        </section>
+
+        <section id="ai-chatbot" class="content">
+            <h2>AI Chatbot</h2>
+            <!-- AI Chatbox Section -->
+            <div class="chat-container">
+                <textarea id="chat-input" placeholder="Type your message or use the mic"></textarea>
+                <button id="send-btn">Send</button>
+                <button id="voice-btn">🎤</button>
+            </div>
+            <p id="chatbot-response"></p>
+        </section>
+
+        <section id="consultancy" class="content">
+            <h2>Consultancy</h2>
+            <input type="text" placeholder="Search for the nearest therapist...">
+            <div class="therapist-examples">
+                <p>Example Therapist 1</p>
+                <p>Example Therapist 2</p>
+                <p>Example Therapist 3</p>
+            </div>
+        </section>
+
+        <!-- Settings Section -->
+        <section id="settings" class="content">
+            <h2>Settings</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" placeholder="Enter your name">
+                <label for="age">Age:</label>
+                <input type="number" id="age" placeholder="Enter your age">
+                <label for="weight">Weight:</label>
+                <input type="number" id="weight" placeholder="Enter your weight">
+                <button type="submit">Save</button>
+            </form>
+        </section>
+    </div>
+
+    <!-- Linking JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
